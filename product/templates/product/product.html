@@ -1,0 +1,42 @@
+{% extends "core/base.html" %}
+
+{% block title %}{{product.name}} |{% endblock title %}
+
+{% block frontpagecontent %}
+
+<div class="max-w-6xl w-full mx-auto flex flex-wrap py-2 px-6 xl:px-0">  
+
+    <div class='images w-full mb-6 lg:mb-0 lg:w-3/5 '>
+        
+        <img src="{% if product.image %}{{ product.image.url}}
+        {% else %}
+        https://via.placeholder.com/240x240x.jpg
+        {% endif %}" 
+        alt="" class="rounded-xl object-cover h-96 w-full">
+
+    </div>
+    
+    <div class='information w-full lg:w-2/5 lg:p-6'>
+        <h1 class="text-2xl">{{product.name}}</h1>
+        <p class='mt-1 text-blue-900'>${{product.price}}</p>
+        {% if product.description %}
+            <p class='mt-5 text-blue-900'>
+                {{product.description}}
+            </p>
+        {% endif %}
+
+    <a href="#" 
+        class="mt-6 inline-block px-8 py-4 rounded-xl bg-blue-600 text-white hover:bg-blue-900"
+        hx-get="{% url 'add_to_cart' product.id %}" 
+        hx-target="#menu-cart-button"
+        hx-swap='outerHTML'
+        >
+        Add to cart
+    </a>
+    </div>
+    
+</div>
+
+
+
+{% endblock frontpagecontent %}
