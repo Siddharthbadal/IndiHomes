@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .cart import Cart
 from product.models import Product
-
+from django.views.decorators.csrf import csrf_exempt
 
 
 def add_to_cart(request, product_id):
@@ -12,11 +12,11 @@ def add_to_cart(request, product_id):
 
     return render(request, 'cart/menu_cart.html', {'cart':cart})
 
-
+@csrf_exempt
 def cart(request):
     return render(request, 'cart/cart.html')
 
-
+@csrf_exempt
 def update_cart(request, product_id, action):
     cart = Cart(request)
 
@@ -49,7 +49,7 @@ def update_cart(request, product_id, action):
     response['HX-Trigger'] = 'update-menu-cart'
     return response
 
-
+@csrf_exempt
 @login_required
 def checkout(request):
     cart = Cart(request)

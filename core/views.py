@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect
 from product.models import Product, Category
 from .forms import SignUpForm 
 from django.core.paginator import Paginator
-
+from django.views.decorators.csrf import csrf_exempt
 
 def frontpage(request):
     products = Product.objects.all()
@@ -38,7 +38,7 @@ def shop(request):
     return render(request, 'core/shop.html', context)
 
 
-
+@csrf_exempt
 def signup(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -50,7 +50,7 @@ def signup(request):
     else:
         form=SignUpForm()
     return render(request, 'core/signup.html', {'form':form})
-
+@csrf_exempt
 @login_required
 def myaccount(request):
     return render(request, 'core/myaccount.html')
