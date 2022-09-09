@@ -4,17 +4,19 @@ from django.contrib.auth.decorators import login_required
 from .cart import Cart
 from product.models import Product
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib import messages
 
 
 def add_to_cart(request, product_id):
     cart = Cart(request)
-    cart.add(product_id)
-
+    cart.add(product_id)  
     return render(request, 'cart/menu_cart.html', {'cart':cart})
+
 
 @csrf_exempt
 def cart(request):
     return render(request, 'cart/cart.html')
+
 
 @csrf_exempt
 def update_cart(request, product_id, action):
@@ -22,8 +24,10 @@ def update_cart(request, product_id, action):
 
     if action == 'increment':
         cart.add(product_id, 1, True)
+        
     else:
         cart.add(product_id, -1, True)
+        
 
     product = Product.objects.get(pk=product_id)
     quantity = cart.get_item(product_id)
@@ -48,6 +52,7 @@ def update_cart(request, product_id, action):
     response = render(request, 'cart/partials/cart_item.html', {'item':item})
     response['HX-Trigger'] = 'update-menu-cart'
     return response
+
 
 @csrf_exempt
 @login_required

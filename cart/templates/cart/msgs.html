@@ -1,0 +1,10 @@
+{% for msg in messages %}
+    {% if msg.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+           
+    <div class="flex items-center w-1/4 bg-blue-500 text-white text-sm font-bold px-4 py-3 text-center m-auto mt-1" role="alert" id="message_timeout">
+        
+        <p class='text-center m-auto'>{{msg}}</p>
+      </div>
+               
+    {% endif %}
+{% endfor %}

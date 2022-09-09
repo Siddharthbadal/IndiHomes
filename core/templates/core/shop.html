@@ -5,8 +5,6 @@
 {% block frontpagecontent %}
 
 
-
-
 <div class="max-w-6xl mx-auto flex flex-wrap item-start py-6 px-6 xl:px-0">   
     <div class="filters w-full lg:w-1/4">
         <h3 class='mb-3 text-xl uppercase'>Search</h3>
@@ -23,36 +21,67 @@
             </div>
 
         </form>
+        
+  
         <h3 class='mt-5 mb-3 text-xl uppercase'>Categories</h3>
+
+
         <ul class="space-y-2">
+
+            
 
             <li><a href="{% url 'shop' %}" 
                 class="{% if not active_category %}
-                text-blue-600{% else %}text-gray-600{% endif %}">All Categories</a>
+                text-blue-600{% else %}text-gray-600{% endif %}">All Products</a>
             </li>
 
             {% for category in categories %}
             <li><a href="{% url 'shop' %}?category={{category.slug}}" 
                 class="{% if category.slug == active_category %}
-                text-blue-600{% else %}text-gray-600{% endif %}">
-                 {{category.name}}</a>
+                text-blue-600{% else %}text-blue-600 {% endif %} font-bold">
+                 {{category.name}}
+                </a>
             </li>
             {% endfor %}
         </ul>
+
+
+        <h3 class='mt-5 mb-3 text-xl uppercase'>Price Filter</h3>
+        <form action="{% url 'price_filter' %}" method='GET'>
+        <div class=''>
+
+            Min:&nbsp;<input type="number" name="min_price" maxlength="4" size="3" class='border w-20' required>
+                
+            Max:&nbsp;<input type="number" name="max_price" maxlength="4" size="3" class='border w-20' required> 
+           
+            <button class="p-4 bg-gray-200 block mt-2 text-sm p-1">
+                {% comment %} <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9 9a2 2 0 114 0 2 2 0 01-4 0z" />
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a4 4 0 00-3.446 6.032l-2.261 2.26a1 1 0 101.414 1.415l2.261-2.261A4 4 0 1011 5z" clip-rule="evenodd" />
+                  </svg> {% endcomment %} Submit
+            </button>
+           
+
+            
+        </div>
+    </form>
     </div>
 
+
+    
 
 
     <div class="products w-full lg:w-3/4 -mt-4 flex items-center flex-wrap">
         
       
-
+   
         {% for product in products %}
             {% include 'product/partials/product_list_item.html' %}
         {% endfor %}
-
         
-
+        {% comment %} {% for product in filtered_products %}
+            {% include 'product/partials/product_list_item.html' %}
+        {% endfor %} {% endcomment %}
     </div>
     
 

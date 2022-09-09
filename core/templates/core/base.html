@@ -18,18 +18,17 @@
             <div class="menu-left flex items-center flex-wrap space-x-6">
                 <a href="{% url 'frontpage' %}" class="py-4 text-lg text-blue-900 hover:text-gray-900 font-semibold">IndiHomes</a>
                 <ul class="flex items-center space-x-4">
-                    <li><a href="{% url 'shop' %}">Shop</a></li>
-
-                
                     
 
-
-                <li><a href="{% url 'signup' %}">SignUp</a></li>
+                    <li><a href="{% url 'shop' %}">Shop</a></li
                     
                     
                 {% if request.user.is_authenticated %}
                 <li><b>Welcome, {{user.username}}</b></li>
                     <li><a href="{% url 'logout' %}">logout</a></li>
+                {% else %}
+                >
+                <li><a href="{% url 'signup' %}">SignUp</a></li>
                 {% endif %}
                 </ul>
             </div>
@@ -56,7 +55,7 @@
 
     </nav>
 
-    
+    {% include '../cart/msgs.html' %}
 
         <main>
           {% block frontpagecontent %}
@@ -71,7 +70,14 @@
 
    
 
+        <script>
+            const message_timeout = document.getElementById("message_timeout")
 
+            setTimeout(function()
+            {
+                message_timeout.style.display = 'none';
+            }, 4000);
+        </script>
 
     
 
