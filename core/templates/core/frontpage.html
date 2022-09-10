@@ -46,11 +46,11 @@
     
 
 
-    <div class="flex space-x-1 mt-5 m-auto items-center">
+    <div class="grid place-items-center w-screen mt-5">
 
         {% if page_obj.has_previous %}
           <a href="?page={{ page_obj.previous_page_number }}" 
-          class="flex items-center px-2 py-2 text-white bg-blue-600 rounded-md">
+          class="px-1 py-1 text-white bg-blue-600 rounded-md hover:bg-blue-800">
             Previous
           </a>
         {% endif %}
@@ -61,7 +61,7 @@
 
         {% if page_obj.has_next %}
           <a href="?page={{ page_obj.paginator.num_pages }}" 
-          class="px-2 py-2 font-bold text-white bg-blue-600 rounded-md hover:bg-blue-400 hover:text-white">
+          class="px-1 py-1 font-bold text-white bg-blue-600 rounded-md hover:bg-blue-800 hover:text-white">
               Next
           </a>
         {% endif %}
@@ -72,9 +72,6 @@
 
 
 </div>
-
-
-
 
 
 

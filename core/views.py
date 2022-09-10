@@ -3,7 +3,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.shortcuts import render, redirect
 from product.models import Product, Category
-from .forms import SignUpForm 
+from .models import ContactForm, SocialMedia
+from .forms import SignUpForm, Contact
 from django.core.paginator import Paginator
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
@@ -105,3 +106,27 @@ def editmyaccount(request):
         return redirect('myaccount')
     return render(request, 'core/edit_myaccount.html')
 
+
+@csrf_exempt
+def contactForm(request):
+    if request.method == 'POST':
+        form = Contact(request.POST)
+        if form.is_valid():
+            
+            form.save()
+            messages.success(request, "Message Sent!")
+            return redirect('frontpage')
+    else:
+        form = Contact()
+        
+        
+       
+      
+    return render(request, 'core/contactForm.html', {'form':form} )
+    
+
+def socialmedia(request):
+    obj = SocialMedia.objects.all()[0]
+    context={'obj':obj}
+    
+    return render(request, 'core/footer.html',context)

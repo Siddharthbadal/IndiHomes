@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from django.contrib.auth import views
-from .views import frontpage, shop, signup, myaccount, editmyaccount, price_filter
+from .views import frontpage, shop, signup, myaccount, editmyaccount, price_filter, contactForm
 
 
 urlpatterns = [
@@ -13,6 +13,8 @@ urlpatterns = [
     path('logout', views.LogoutView.as_view(), name='logout'),
     path('myaccount/', myaccount, name='myaccount'),
     path('myaccount/edit', editmyaccount, name='editmyaccount'),
+    path('contact-form', contactForm, name='contactForm'),
+    
     
    
 ] 
