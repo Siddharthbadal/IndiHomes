@@ -1,6 +1,4 @@
-.env
-venv
-staticfiles
+
 
 
 
@@ -142,3 +140,11 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+
+
+
+.env
+venv
+staticfiles
+.gitignore
+db.sqlite3
