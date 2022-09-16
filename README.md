@@ -9,23 +9,24 @@
 
 
 ### Category & Filter Page
-![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/shop.png?token=GHSAT0AAAAAABX23GVQX4ICWVXQZNFEOBD2YZEQ4EQ)
+![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/shop.png?token=GHSAT0AAAAAABX23GVRRSNIERHY5BKZRBPOYZERCGA)
+
 
 
 ### Signup Page
-![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/signup.png?token=GHSAT0AAAAAABX23GVR66DM2RIKUEWLFLHAYZEQ4HA)
+![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/signup.png?token=GHSAT0AAAAAABX23GVQG32JIY7FMKUXNGCMYZERECA)
 
 
 ### Product Details Page
-![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/product.png?token=GHSAT0AAAAAABX23GVQR3EB2U7Z2RUNCRDCYZEQ4MA)
+![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/product.png?token=GHSAT0AAAAAABX23GVQ4SSUQJNWQYMQLQ3AYZERDNQ)
 
 
 ### Order Page
-![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/orderpage.png?token=GHSAT0AAAAAABX23GVRFRYKBY245HIOJS3OYZEQ4NA)
+![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/orderpage.png?token=GHSAT0AAAAAABX23GVRZKLNOPJJ7WZICFOOYZEREBA)
 
 
 ### Checkout Page
-![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/checkout.png?token=GHSAT0AAAAAABX23GVQMN32CYREUDHIGKQEYZEQ52Q)
+![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/checkout.png?token=GHSAT0AAAAAABX23GVQEFD2F5XGYP2W3UAUYZERD7Q)
 
 
 ### User Account Page
