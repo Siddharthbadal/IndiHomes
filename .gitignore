@@ -148,3 +148,5 @@ venv
 staticfiles
 .gitignore
 db.sqlite3
+ecomsite/.env 
+ecomsite\.env
