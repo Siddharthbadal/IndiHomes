@@ -1,6 +1,24 @@
 #### IndiHomes
 
+An ecommerce project in Django, Tailwind and JavaScript
 
+#### Tech Stack
+  - Django
+  - Tailwind
+  - JavaScript
+  - HTML/CSS
+  - HTMX
+  
+
+### App features
+* Product Listing
+* Pagination
+* Products Details with Related products
+* Category and filter
+* Order page
+* Contact Page
+* SignUp and SignIn
+* User Account and order page
 
 
 
