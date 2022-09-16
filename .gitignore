@@ -150,3 +150,5 @@ staticfiles
 db.sqlite3
 ecomsite/.env 
 ecomsite\.env
+
+ecomsite\staticfiles
