@@ -22,11 +22,11 @@ An ecommerce project in Django, Tailwind and JavaScript
 
 
 <p>
-    <img src="https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/home.png"/>
+    <img src="https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/home.png?token=GHSAT0AAAAAABX23GVQJVAXGNV6TE64PLBMYZERAYQ"/>
 </p>
 
 ### Home Page
-![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/home.png?token=GHSAT0AAAAAABX23GVQJVAXGNV6TE64PLBMYZERAYQ)
+![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/home.png)
 
 
 ### Category & Filter Page
