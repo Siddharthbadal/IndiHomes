@@ -22,7 +22,7 @@ An ecommerce project in Django, Tailwind and JavaScript
 
 
 <p>
-    <img src="https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/home.png" width="220" height="240" />
+    <img src="https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/home.png"/>
 </p>
 ### Home Page
 ![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/home.png?token=GHSAT0AAAAAABX23GVQJVAXGNV6TE64PLBMYZERAYQ)
