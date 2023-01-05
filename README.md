@@ -22,7 +22,7 @@ An ecommerce project in Django, Tailwind and JavaScript
 
 
 
-![ezcv logo](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/.github/images/shop.png)
+![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/.github/images/shop.png)
 ### Home Page
 ![img](/images/home.png)
 
