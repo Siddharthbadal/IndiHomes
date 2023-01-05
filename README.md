@@ -21,6 +21,8 @@ An ecommerce project in Django, Tailwind and JavaScript
 * User Account and order page
 
 
+<img src="/images/account.png" width=800 /> ![](images/account.png) 
+
 ### Home Page
 ![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/main/images/home.png)
 
