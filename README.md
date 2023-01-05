@@ -20,7 +20,7 @@ An ecommerce project in Django, Tailwind and JavaScript
 * SignUp and SignIn
 * User Account and order page
 
-
+<img src="./images/shop.png" alt="lasagna">
 
 ![img](https://raw.githubusercontent.com/Siddharthbadal/IndiHomes/master/images/shop.png)
 ### Home Page
